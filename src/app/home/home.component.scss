@@ -1,3 +1,5 @@
+
+
 .intro-header {
     height: unset !important;
   }
@@ -7,7 +9,14 @@
   }
   .view {
    height: 100vh !important;
+
+   img{
+    width: 25.2rem;
+    height: 32.2rem;
+
+   }
   }
+  
   .btn .fa {
     margin-left: 3px;
   }
@@ -27,6 +36,8 @@
   }
   .rgba-gradient .full-bg-img {
     background: linear-gradient(45deg, rgba(42, 27, 161, 0.6), rgba(29, 210, 177, 0.6) 100%);
+    // background: linear-gradient(to right, #b92b27, #1565c0); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    height: 904px;
   }
   @media (max-width: 450px) {
     .margins {
