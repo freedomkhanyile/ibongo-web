@@ -2,94 +2,39 @@ $topnav-background-color: #222;
 :host {
     display: block;
 }
-.login-page {
+.loginPage{
+    height: unset !important;
+}
+.login {
+
+
+    background: 
+    /* top, transparent red, faked with gradient */ 
+    linear-gradient(45deg, rgba(42, 27, 161, 0.6), rgba(29, 210, 177, 0.6) 100%),
+    /* bottom, image */
+    url("../../assets/images/background.jpg")no-repeat center center;
+    background-size: cover;
     position: absolute;
     top: 0;
     left: 0;
     right: 0;
     bottom: 0;
     overflow: auto;
-    background: $topnav-background-color;
-    text-align: center;
-    color: #fff;
-    padding: 3em;
-    .col-lg-4 {
-        padding: 0;
-    }
-    .input-lg {
-        height: 46px;
-        padding: 10px 16px;
-        font-size: 18px;
-        line-height: 1.3333333;
-        border-radius: 0;
-    }
-    .input-underline {
-        background: 0 0;
-        border: none;
-        box-shadow: none;
-        border-bottom: 2px solid rgba(255, 255, 255, 0.5);
+    
+    .form-signin {
+        width: 100%;
+        max-width: 420px;
+        padding: 15px;
+        margin: auto;
+        background: rgba(38, 34, 20, 0.55);
+        margin-top:2.5rem;
         color: #fff;
-        border-radius: 0;
-    }
-    .input-underline:focus {
-        border-bottom: 2px solid #fff;
-        box-shadow: none;
-    }
-    .rounded-btn {
-        -webkit-border-radius: 50px;
-        border-radius: 50px;
-        color: rgba(255, 255, 255, 0.8);
-        background: $topnav-background-color;
-        border: 2px solid rgba(255, 255, 255, 0.8);
-        font-size: 18px;
-        line-height: 40px;
-        padding: 0 25px;
-    }
-    .rounded-btn:hover,
-    .rounded-btn:focus,
-    .rounded-btn:active,
-    .rounded-btn:visited {
-        color: rgba(255, 255, 255, 1);
-        border: 2px solid rgba(255, 255, 255, 1);
-        outline: none;
-    }
 
-    h1 {
-        font-weight: 300;
-        margin-top: 20px;
-        margin-bottom: 10px;
-        font-size: 36px;
-        small {
-            color: rgba(255, 255, 255, 0.7);
+        .fa-home{
+            margin-top: 1.5rem;
+            margin-left: auto;
+            margin-right: auto; 
         }
     }
 
-    .form-group {
-        padding: 8px 0;
-        input::-webkit-input-placeholder {
-            color: rgba(255, 255, 255, 0.6) !important;
-        }
-
-        input:-moz-placeholder {
-            /* Firefox 18- */
-            color: rgba(255, 255, 255, 0.6) !important;
-        }
-
-        input::-moz-placeholder {
-            /* Firefox 19+ */
-            color: rgba(255, 255, 255, 0.6) !important;
-        }
-
-        input:-ms-input-placeholder {
-            color: rgba(255, 255, 255, 0.6) !important;
-        }
-    }
-    .form-content {
-        padding: 40px 0;
-    }
-    .user-avatar {
-        -webkit-border-radius: 50%;
-        border-radius: 50%;
-        border: 2px solid #fff;
-    }
 }

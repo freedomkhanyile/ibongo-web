@@ -1,6 +1,6 @@
 import { CommonModule } from '@angular/common';
 import { HttpClient, HttpClientModule } from '@angular/common/http';
-import { NgModule } from '@angular/core';
+import { NgModule,CUSTOM_ELEMENTS_SCHEMA  } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { TranslateLoader, TranslateModule } from '@ngx-translate/core';
@@ -10,6 +10,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { AuthGuard } from './shared';
 import { MDBBootstrapModule } from 'angular-bootstrap-md';
+import { NavComponent } from './nav';
 
 // AoT requires an exported function for factories
 export const createTranslateLoader = (http: HttpClient) => {
@@ -39,6 +40,7 @@ export const createTranslateLoader = (http: HttpClient) => {
         MDBBootstrapModule.forRoot()
     ],
     declarations: [AppComponent],
+    exports:[],
     providers: [AuthGuard],
     bootstrap: [AppComponent]
 })

@@ -1,22 +1,28 @@
-<div class="login-page" [@routerTransition]>
-    <div class="row justify-content-md-center">
-        <div class="col-md-4">
-            <img src="assets/images/logo.png" width="150px" class="user-avatar" />
-            <h1>SB Admin BS4 Angular5</h1>
-            <form role="form">
-                <div class="form-content">
-                    <div class="form-group">
-                        <input type="text" ng-model="name" class="form-control input-underline input-lg" id="" placeholder="Email">
-                    </div>
-
-                    <div class="form-group">
-                        <input type="password" class="form-control input-underline input-lg" id="" placeholder="Password">
-                    </div>
-                </div>
-                <a class="btn rounded-btn" [routerLink]="['/dashboard']" (click)="onLoggedin()"> Log in </a>
-                &nbsp;
-                <a class="btn rounded-btn" [routerLink]="['/signup']">Register</a>
-            </form>
+<section class="loginPage">
+<div class="login" [@routerTransition]>
+    <form class="form-signin">
+        <div class="text-center mb-4">
+            <span><i class="fas fa-sign-in-alt fa-3x"></i></span>
+            <h1 class="h3 mb-3 font-weight-normal">Sign In</h1>
         </div>
-    </div>
+
+        <div class="form-label-group">
+            <label for="inputEmail">Email address</label>
+            <input id="inputEmail" class="form-control" placeholder="Email address" required="" autofocus="" type="email">
+           
+        </div>
+
+        <div class="form-label-group mb-3">
+            <label for="inputPassword">Password</label>
+            <input id="inputPassword" class="form-control" placeholder="Password" required="" type="password">
+        </div>
+        
+        <button class="btn btn-lg btn-primary btn-block" [routerLink]="['/dashboard']" (click)="onLoggedin()" type="submit">Sign in</button>
+        <!-- <button class="btn btn-lg btn-success btn-block" [routerLink]="['/signup']"  type="submit">Sign Up</button> -->
+        <div class="form-label-group mb-3">
+                <span><a [routerLink]="['/home']" [routerLink]="['/dashboard']" > <li class="fas fa-home"></li> </a></span>
+        </div>
+        <p class="mt-5 mb-3 text-muted text-center">© 2018</p>
+    </form>
 </div>
+</section>

@@ -2,7 +2,9 @@ import { Routes, RouterModule } from '@angular/router';
 import { NgModule } from '@angular/core';
 import { HomeComponent } from '../home';
 import { IndexComponent } from './index.component';
-import { NavComponent } from '../home/nav';
+import { NavComponent } from '../nav';
+ 
+
 
 const routes: Routes = [
   {

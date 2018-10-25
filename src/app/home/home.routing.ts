@@ -1,7 +1,8 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 import { HomeComponent } from './home.component';
-import { NavComponent } from './nav';
+ 
+ 
 
  
 // const routes: Routes = [
@@ -15,7 +16,7 @@ const routes: Routes = [
   }
 ];
 
-export const declarations = [NavComponent,HomeComponent];
+export const declarations = [HomeComponent];
 
 @NgModule({
   imports: [RouterModule.forChild(routes)],
