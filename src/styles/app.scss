@@ -4,6 +4,7 @@
 @import "utils";
 @import "rtl";
 @import "responsive";
+@import "_cards.scss";
 
 @media print {
     .breadcrumb {
@@ -13,4 +14,23 @@
 
 html body {
     width: 100%;
+    background-color: #151515;
+     color: #ffffff;    
+    
+}
+.sidebar[_ngcontent-c3]{
+    background: #151515 !important;
+    border-right:10px solid #353b48; 
+    -webkit-box-shadow: 10px 6px 25px -1px rgba(0,0,0,0.75);
+    -moz-box-shadow: 10px 6px 25px -1px rgba(0,0,0,0.75);
+     box-shadow: 10px 6px 25px -1px rgba(0,0,0,0.75) !important;
+ }
+
+ 
+
+ @media only screen 
+    and (min-device-width : 480px) and (max-device-width : 481px) {
+    body { 
+        padding: -1px;
+    }  
 }
